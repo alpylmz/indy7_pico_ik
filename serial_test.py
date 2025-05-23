@@ -39,7 +39,9 @@ def main():
     serial_port = args.port
     baud_rate = args.baud
     read_timeout = args.timeout
-    # First three 
+    # First line is the translation vector
+    # The next three lines are the rotation matrix
+    # Next line is starting position, you can leave it as is, or you can set it as the current position
     message_to_send = \
     """
     0.5 0.5 0.5
